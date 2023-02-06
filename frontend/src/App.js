@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import ToDo from './components/ToDo'
-import { getAllToDo } from './utils/HandleApi';
+import { addToDo, getAllToDo } from './utils/HandleApi';
 
 export default function App() {
   const [toDo, setToDo] = useState([]);
@@ -16,9 +16,12 @@ export default function App() {
       <div className='container'>
         <h1> TODO APP </h1>
         <div className='top'>
-         <input type="text" placeholder='enter new ToDo' />
+         <input 
+         type="text"
+          placeholder='enter new ToDo'
+           />
 
-        <div className='add'>Add</div>
+        <div className='add' onClick={addToDo}>Add</div>
         </div>
 
         <div className='list'>

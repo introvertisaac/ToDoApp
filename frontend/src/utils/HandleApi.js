@@ -13,5 +13,10 @@ const getAllToDo = (setToDo) => {
     
 }
 
+const addToDo = (text, setText, setToDo) => {
+
+}
+
+export {addToDo}
 
 export {getAllToDo}
