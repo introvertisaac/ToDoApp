@@ -1,3 +1,17 @@
-import express from 'express'
-import mongoose from 'mongoose'
+//imports
+const express = require('express')
+const mongoose = require('mongoose')
 
+//initialization
+
+require('dotenv').config()
+
+
+const app = express()
+
+const PORT = process.env.PORT || 5000
+
+app.listen(PORT, () => console.log(`listening on ${PORT}`));
+
+
+//middlewares
