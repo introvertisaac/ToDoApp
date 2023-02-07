@@ -14,7 +14,7 @@ export default function App() {
   return (
     <div className='App'>
       <div className='container'>
-        <h1> TODO APP </h1>
+        <h1> TODO APP - TRIAL</h1>
         <div className='top'>
          <input 
          type="text"
